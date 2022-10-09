@@ -1,0 +1,6 @@
+{
+  "videos": [
+    { "id": 1, "title": "Primeiro Video", "path": "/tmp/video_1.mp4" },
+    { "id": 2, "title": "Segundo Video", "path": "/tmp/video_2.mp4" }
+  ]
+}
