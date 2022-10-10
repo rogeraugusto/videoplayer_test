@@ -38,12 +38,21 @@ function PlayerVideo() {
 
   const renderVideo = () => {
     if (videos.length > 0) {
-      const { path } = videos.filter(
+      const { title, path } = videos.filter(
         (video) => Number(video.id) === currentVideo
       )[0];
 
       return (
-        <video muted autoPlay preload={"auto"} src={path} onEnded={nextVideo} />
+        <div>
+          <p>{title}</p>
+          <video
+            muted
+            autoPlay
+            preload={"auto"}
+            src={path}
+            onEnded={nextVideo}
+          />
+        </div>
       );
     }
   };
